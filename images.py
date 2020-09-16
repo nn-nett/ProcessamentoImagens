@@ -1,10 +1,10 @@
 from PIL import Image, ImageFilter
-from os import path
+import os
 
-print(os.path.relpath)
+os.getcwd()
 
-img = Image.open('C:\\Users\\rpgni\\PycharmProjects\\ProcessamentoImagens\\venv\\Pokedex\\pikachu.jpg')
+img = Image.open('.\\Pokedex\\pikachu.jpg')
 
 filtered_img = img.convert('L')
-filtered_img.save("grey.png", 'png')
+filtered_img.save("juju.png", 'png')
 
